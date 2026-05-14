@@ -1,0 +1,134 @@
+<!-- Add a /logout route (invalidate token by storing in blacklist array). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Login Logout Auth</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TOGGLE BUTTONS -->
+
+    <div class="toggle-box">
+
+      <button id="showLogin">
+        Login
+      </button>
+
+      <button id="showSignup">
+        Signup
+      </button>
+
+    </div>
+
+    <!-- SIGNUP FORM -->
+
+    <div class="form-box" id="signupBox">
+
+      <h2>Create Account</h2>
+
+      <form id="signupForm">
+
+        <input
+          type="text"
+          id="signupName"
+          placeholder="Enter Name"
+          required
+        />
+
+        <input
+          type="email"
+          id="signupEmail"
+          placeholder="Enter Email"
+          required
+        />
+
+        <div class="password-box">
+
+          <input
+            type="password"
+            id="signupPassword"
+            placeholder="Enter Password"
+            required
+          />
+
+          <span id="signupEye" class="eye-btn">
+            👁️
+          </span>
+
+        </div>
+
+        <button type="submit">
+          Signup
+        </button>
+
+      </form>
+
+      <p id="signupMessage"></p>
+
+    </div>
+
+    <!-- LOGIN FORM -->
+
+    <div class="form-box hidden" id="loginBox">
+
+      <h2>Login</h2>
+
+      <form id="loginForm">
+
+        <input
+          type="email"
+          id="loginEmail"
+          placeholder="Enter Email"
+          required
+        />
+
+        <div class="password-box">
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="Enter Password"
+            required
+          />
+
+          <span id="loginEye" class="eye-btn">
+            👁️
+          </span>
+
+        </div>
+
+        <button type="submit">
+          Login
+        </button>
+
+      </form>
+
+      <button id="logoutBtn" class="logout-btn">
+        Logout
+      </button>
+
+      <button id="profileBtn">
+        Access Profile
+      </button>
+
+      <p id="loginMessage"></p>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+<!-- Push your Auth API to GitHub. -->
